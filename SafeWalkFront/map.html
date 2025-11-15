@@ -1,34 +1,56 @@
 <!DOCTYPE html>
-<nav>
-<a href="dashboard.html">Home</a>
-<a href="map.html">Map</a>
-<a href="report.html">Report</a>
-<a href="profile.html">Profile</a>
-</nav>
-</header>
+<html>
 
+<head>
+    <meta charset="UTF-8">
+    <title>SafeWalk Map</title>
 
-<div class="map-wrapper">
-<div id="controls" class="controls card">
-<input id="startInput" placeholder="Enter start location or 'Current'" />
-<input id="destInput" placeholder="Enter destination" />
-<div class="row">
-<button id="findRouteBtn">Find Safe Route</button>
-<button id="shareBtn" class="ghost">Share</button>
-<button id="sosBtn" class="danger">SOS</button>
-</div>
-<div class="safety">
-Safety score: <span id="score">—</span>
-</div>
-</div>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-<div id="map" class="map card"></div>
-<div id="alerts" class="alerts"></div>
-</div>
+<body>
 
+    <header>
+        <nav>
+            <a href="dashboard.html">Home</a>
+            <a href="map.html">Map</a>
+            <a href="report.html">Report</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="js/script.js"></script>
+    <div class="map-wrapper">
+
+        <div id="controls" class="controls card">
+            <input id="startInput" placeholder="Enter start or 'Current'">
+            <input id="destInput" placeholder="Enter destination">
+
+            <div class="row">
+                <button id="findRouteBtn">Find Safe Route</button>
+                <button id="shareBtn" class="ghost">Share</button>
+                <button id="sosBtn" class="danger">SOS</button>
+            </div>
+
+            <div class="safety">
+                Safety score: <span id="score">—</span>
+            </div>
+        </div>
+
+        <div id="map" class="map card"></div>
+        <div id="alerts" class="alerts"></div>
+
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Your JS -->
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
