@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SafeWalk — Profile</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="navbar">
+<div class="brand">SafeWalk</div>
+<nav>
+<a href="dashboard.html">Home</a>
+<a href="map.html">Map</a>
+<a href="report.html">Report</a>
+<a href="profile.html">Profile</a>
+</nav>
+</header>
+
+
+<main class="main">
+<div class="container card profile">
+<img src="assets/user.png" alt="user" class="avatar" />
+<h3 id="pfName">SafeWalk User</h3>
+
+
+<div class="card small">Name: <span id="pfNameVal">You</span></div>
+<div class="card small">Phone: <span id="pfPhone">Not set</span></div>
+<div class="card small">Saved Addresses:
+<ul id="savedAddresses">
+<li>Home — 123 Main St</li>
+</ul>
+</div>
+
+
+<div style="margin-top:12px">
+<button id="editProfile">Edit Profile</button>
+</div>
+</div>
+</main>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
