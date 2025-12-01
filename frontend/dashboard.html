@@ -25,6 +25,25 @@
 <div class="hero-actions">
 <a class="btn" href="map.html">Open Map</a>
 <a class="btn ghost" href="report.html">Report Issue</a>
+<!-- ========================
+     EMERGENCY CAMERA PANEL
+========================= -->
+<div class="container card" style="margin-top:24px">
+  <h3>Emergency Camera</h3>
+
+  <video id="camera" autoplay playsinline style="width:100%; border-radius:12px; background:black;"></video>
+
+  <canvas id="snapshot" style="display:none;"></canvas>
+
+  <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+    <button id="openCameraBtn">Open Camera</button>
+    <button id="flashBtn">Flash ON</button>
+    <button id="captureBtn">Capture Photo</button>
+  </div>
+
+  <img id="preview" style="width:100%; margin-top:12px; display:none; border-radius:12px;" />
+</div>
+
 </div>
 </section>
 
